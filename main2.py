@@ -1,4 +1,5 @@
 import random
+
 def action():
     options = ["check for a movie", "rent a movie", "randomly select a movie"]
     print("Welcome to our movie database!")
@@ -14,30 +15,29 @@ def get_movie_name():
 
 #------------------------------------------------------------------------------------------#
                                 #FUNCTIONAL AS OF COMMIT 4
-
-if action == "q":
-    exit()
 movie_list = ['Haunted house', 'The ritual', 'Stalker', 'The kidnapping', 'Torture']
 
-
+#-------------main program func
+def main():
+    if action == "q":
+        exit()
+#---------------begin to take input. find out what user wants to do
 actions= action()
+#-----------------------option for random selected movie
 if actions == "random":
-    # movie_list = ['Haunted house', 'The ritual', 'Stalker', 'The kidnapping', 'Torture']
     x = random.choice(movie_list)
     print("Watch this movie: ")
     print(x)
-
+#-----------------------------option to check movie list
 if actions == "check":
     print(movie_list)
-
+#-------------------------------option to rent movie
 if actions == "rent":
-    print("Enter your card information")
     while True:
         try:
             card_info = int(input("Please enter card information: "))
         except ValueError:
             print("Sorry, i didnt understand that. Enter numbers only")
-        # continue 
         else:
             #input is correct, can continue
             break
@@ -45,6 +45,8 @@ if actions == "rent":
     print(movie_list)
     movie_name= get_movie_name()
 if movie_name in movie_list:
-    print("You got it")
+    print("You got it. Enjoy and see you next time!")
+#--------------call main func to begin program
+    main()
 #------------------------------------------------------------------------------------------#
 
