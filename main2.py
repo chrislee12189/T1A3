@@ -15,7 +15,10 @@ def get_movie_name():
 
 #------------------------------------------------------------------------------------------#
                                 #FUNCTIONAL AS OF COMMIT 4
-movie_list = ['Haunted house', 'The ritual', 'Stalker', 'The kidnapping', 'Torture']
+movie_list = ['Haunted house', 'The ritual', 'Stalker', 'The Kidnapping', 'Torture']
+for i in range(len(movie_list)):
+    movie_list[i] = movie_list[i].lower()
+    
 
 #-------------main program func
 def main():
@@ -43,9 +46,10 @@ if actions == "rent":
             break
     print(f"You entered: {card_info}")
     print(movie_list)
-    movie_name= get_movie_name()
-if movie_name in movie_list:
-    print("You got it. Enjoy and see you next time!")
+    movie_name = get_movie_name()
+
+    if movie_name in movie_list:
+        print("You got it. Enjoy and see you next time!")
 #--------------call main func to begin program
     main()
 #------------------------------------------------------------------------------------------#
