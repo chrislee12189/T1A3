@@ -1,6 +1,8 @@
 from Movie_menu_items import Movie_Menu_Items
 from Movie_Menu import Movie_Menu
 from seed import movie_seed
+from rent import Rent
+from os import system
 
 
 movie_menu = movie_seed
@@ -21,134 +23,49 @@ def add_movie():
     price = float(input(f"Whats the price of {name}?: "))
     Movie_Menu.add_item(name, price)
 
+def edit_rating():
+    Movie_Menu.print_movie_menu()
+    name = input("Whats the name of the movie who's rating youd like to edit?: ")
+    Movie_Menu.edit_rating(name)
+
 def remove_movie():
-    for item in movie_seed:
+    for item in movie_menu:
         print(item.name)
         name = input("What is the name of the movie you're removing: ")
-        movie_seed.delete_movie(name)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# import random
-# from os import system
-
-# def action():
-#     options = ["check for a movie", "rent a movie", "randomly select a movie"]
-#     print("Welcome to our movie database!")
-#     print("\nChoose an option from the list below or q/enter to quit: ")
-#     for i in options:
-#         print(i)
-#     action = input("What would you like to do? ")
-#     return action
-
-# def get_movie_name():
-#     movie_name = input("What movie do you want to rent? ")
-#     return movie_name
-
-# #------------------------------------------------------------------------------------------#
-#                                 #FUNCTIONAL AS OF COMMIT 4
-# movie_list = ['Haunted house', 'The ritual', 'Stalker', 'The Kidnapping', 'Torture']
-# for i in range(len(movie_list)):
-#     movie_list[i] = movie_list[i].lower()
-    
-
-# #-------------main program func
-# def main():
-#     if action == "q":
-#         exit()
-# #---------------begin to take input. find out what user wants to do
-# actions= action()
-# #-----------------------option for random selected movie
-# if actions == "random":
-#     x = random.choice(movie_list)
-#     print("Watch this movie: ")
-#     print(x)
-# #-----------------------------option to check movie list
-# if actions == "check":
-#     print(movie_list)
-# #-------------------------------option to rent movie
-# if actions == "rent":
-#     while True:
-#         try:
-#             card_info = int(input("Please enter card information: "))
-#         except ValueError:
-#             print("Sorry, i didnt understand that. Enter numbers only")
-#         else:
-#             #input is correct, can continue
-#             break
-#     print(f"You entered: {card_info}")
-#     print(movie_list)
-#     movie_name = get_movie_name()
-
-#     if movie_name in movie_list:
-#         print("You got it. Enjoy and see you next time!")
-# #--------------call main func to begin program
-#     main()
-# #------------------------------------------------------------------------------------------#
-
+        movie_menu.delete_movie(name)
+
+def rent_movie():
+    print("Lets rent a movie for you today!: ")
+    rent_movie = Rent()
+    continue_order = "y"
+    while continue_order == "y":
+        name = input("What movie do you want?: ")
+        quantity = input("How many copies?: ")
+        rent_movie.add_to_cart(name, quantity)
+        print(rent_movie.add_to_cart)
+        print(rent_movie.total_cost())
+
+option = ""
+
+while option != "6":
+    system("clear")
+    option = (print_options)
+    system("clear")
+    if option == "1":
+        print(movie_menu())
+    elif option == "2":
+        add_movie()
+    elif option == "3":
+        edit_rating()
+    elif option == "4":
+        remove_movie()
+    elif option == "5":
+        rent_movie()
+    elif option == "6":
+        continue
+    else: print("Sorry, i didnt understand that input type!")
+
+    input("Press Enter to continue!!: ")
+    system("clear")
+
+print("Goodbye")

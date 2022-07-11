@@ -23,7 +23,7 @@ class Movie_Menu:
                 self.movie_menu_items.remove(item)
                 return print(f"{name} was removed from our database!")
 
-    def edit_price(self, name):
+    def edit_rating(self, name):
         for item in self.movie_menu_items:
             if item.name == name:
                 rating = float(input("What is the updated rating of {name}"))
