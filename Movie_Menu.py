@@ -31,4 +31,7 @@ class Movie_Menu:
                 return print(f"{name}'s rating was updated!")
         return print(f"{name} is not in our database!!")
 
+        #print, add, delete, update
+        #add, delete edit , take order, 
+
 #-----------------------------------------------------------END-----------------------------------------------------------------#
