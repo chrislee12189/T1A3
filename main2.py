@@ -1,8 +1,9 @@
+from os import system
 from Movie_menu_items import Movie_Menu_Items
 from Movie_Menu import Movie_Menu
 from seed import movie_seed
 from rent import Rent
-from os import system
+
 
 
 movie_menu = movie_seed
@@ -52,7 +53,7 @@ while option != "6":
     option = print_options()
     # system("clear")
     if option == "1":
-        print(movie_menu())
+        print(movie_menu)
     elif option == "2":
         add_movie()
     elif option == "3":
@@ -61,9 +62,9 @@ while option != "6":
         remove_movie()
     elif option == "5":
         rent_movie()
-    # elif option == "6":
-    #     continue
-    # else: print("Sorry, i didnt understand that input type!")
+    elif option == "6":
+        continue
+    else: print("Sorry, i didnt understand that input type!")
 
     # input("Press Enter to continue!!: ")
     # system("clear")
