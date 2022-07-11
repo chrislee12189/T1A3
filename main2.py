@@ -20,8 +20,8 @@ def print_options():
 #------------------------------------------DEFINE MENU OPTIONS-----------------------------------------------------------------#
 def add_movie():
     name=input("Whats the name of the movie youre adding?: ")
-    price = float(input(f"Whats the price of {name}?: "))
-    Movie_Menu.add_item(name, price)
+    price = float(input(f"Whats the rating of {name}?: "))
+    Movie_Menu.add_movie(name, price)
 
 def edit_rating():
     Movie_Menu.print_movie_menu()
@@ -48,9 +48,9 @@ def rent_movie():
 option = ""
 
 while option != "6":
-    system("clear")
-    option = (print_options)
-    system("clear")
+    # system("clear")
+    option = print_options()
+    # system("clear")
     if option == "1":
         print(movie_menu())
     elif option == "2":
@@ -61,11 +61,11 @@ while option != "6":
         remove_movie()
     elif option == "5":
         rent_movie()
-    elif option == "6":
-        continue
-    else: print("Sorry, i didnt understand that input type!")
+    # elif option == "6":
+    #     continue
+    # else: print("Sorry, i didnt understand that input type!")
 
-    input("Press Enter to continue!!: ")
-    system("clear")
+    # input("Press Enter to continue!!: ")
+    # system("clear")
 
 print("Goodbye")
