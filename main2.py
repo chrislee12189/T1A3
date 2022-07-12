@@ -1,19 +1,13 @@
 from os import system
 
-from pkg_resources import working_set
+# from pkg_resources import working_set
 from Movie_menu_items import Movie_Menu_Items
 from Movie_Menu import Movie_Menu
 from seed import movie_seed
 from rent import Rent
 
 #---------------------------------------TODO:-----------------------------------------#
-#   develop error testing for each feature
-#   feature 1 = main menu = TESTS FOR CORRECT INPUT AND TESTS FOR TERMINATING INPUT = implemented and functional
-#---------------COMPLETED ERROR TESTING FOR FUNCTIONS BELOW-----------------#
-#   feature 2 = add movie to database = 2 TESTS WORKING = TESTS FOR EMPTY STRING FOR NAME OF MOVIE, TESTS FOR STR ENTRY FOR MOVIE RATING = implemented and functional
-#   feature 3 = borrow movie = 2 TESTS WORKING = TESTS FOR EMPTY STRING WHEN ENTERING MOVIE THEY WANT TO RENT, TESTS FOR CORRECT INPUT TYPE WHEN ASKING RENTAL PERIOD = implemented and functional
-
-#---------------------------------#
+#-------------------------------------------------------------------------------------#
 
 # def check_is_digit(input_str):
 #     if input_str.strip().isdigit():
