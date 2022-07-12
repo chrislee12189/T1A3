@@ -53,7 +53,8 @@ while option != "6":
     option = print_options()
     # system("clear")
     if option == "1":
-        print(movie_menu)
+        print(movie_seed())
+    #broken currently
     elif option == "2":
         add_movie()
     elif option == "3":

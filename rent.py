@@ -4,9 +4,9 @@ class Rent:
     
     def add_to_cart(self,name,quantity):
         if name in self.rent_movie:
-            self.rent_movie.append += quantity
+            self.add_to_cart += quantity
         else:
-            self.rent_movie.append[name] = quantity
+            self.add_to_cart[name] = quantity
 
     def total_cost(self):
         total = 0

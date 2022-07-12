@@ -7,8 +7,7 @@ class Movie_Menu:
     
     def print_movie_menu(self):
         print("Welcome to our Movie Database. These are our options: ")
-        for item in self.movie_menu_items:
-            item.show_item()
+        
             
         
     def add_movie(self, name, price):
