@@ -8,7 +8,8 @@ from rent import Rent
 
 #---------------------------------------TODO:-----------------------------------------#
 #   develop error testing for each feature
-#   feature 1 = movie list = error test for feature one = not implemented yet
+#   feature 1 = main menu = TESTS FOR CORRECT INPUT AND TESTS FOR TERMINATING INPUT = implemented and functional
+#---------------COMPLETED ERROR TESTING FOR FUNCTIONS BELOW-----------------#
 #   feature 2 = add movie to database = 2 TESTS WORKING = TESTS FOR EMPTY STRING FOR NAME OF MOVIE, TESTS FOR STR ENTRY FOR MOVIE RATING = implemented and functional
 #   feature 3 = borrow movie = 2 TESTS WORKING = TESTS FOR EMPTY STRING WHEN ENTERING MOVIE THEY WANT TO RENT, TESTS FOR CORRECT INPUT TYPE WHEN ASKING RENTAL PERIOD = implemented and functional
 
@@ -43,7 +44,6 @@ def print_options():
 #------------------------------------------DEFINE MENU OPTIONS-----------------------------------------------------------------#
 
 def add_movie():
-    #FIXME: first try/except block ignored/doesnt work. 2nd works fine
     try:
         name=input("Whats the name of the movie youre adding?: ")
         if name == "":
