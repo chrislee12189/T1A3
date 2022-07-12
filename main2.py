@@ -11,7 +11,7 @@ from rent import Rent
 #   add movie = works
 #   adjust rating = takes input but doesnt save it/update it
 #   delete movie = broken
-#   rent movie = takes movie name and copy nums but breaks after that
+#   rent movie = works
 #   exit = works
 
 
@@ -30,13 +30,13 @@ def print_options():
 #------------------------------------------DEFINE MENU OPTIONS-----------------------------------------------------------------#
 def add_movie():
     name=input("Whats the name of the movie youre adding?: ")
-    price = float(input(f"Whats the rating of {name}?: "))
-    movie_menu.add_movie(name, price)
+    rating = float(input(f"Whats the rating of {name}?: "))
+    movie_menu.add_movie(name,rating)
 
 def edit_rating():
     movie_menu.print_movie_menu()
     name = input("Whats the name of the movie who's rating youd like to edit?: ")
-    movie_menu.edit_rating(name)
+    movie_menu.edit_movie_rating(name)
 
 def remove_movie():
     for item in movie_menu:

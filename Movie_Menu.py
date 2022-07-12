@@ -11,8 +11,8 @@ class Movie_Menu:
             item.show_item()
             
         
-    def add_movie(self, name, price):
-        new_item = Movie_Menu_Items(name, price)
+    def add_movie(self, name, rating):
+        new_item = Movie_Menu_Items(name, rating)
         self.movie_menu_items.append(new_item)
 
     def delete_movie(self, name):
@@ -24,7 +24,7 @@ class Movie_Menu:
                 self.movie_menu_items.remove(item)
                 return print(f"{name} was removed from our database!")
 
-    def edit_rating(self, name):
+    def edit_movie_rating(self, name):
         for item in self.movie_menu_items:
             if item.name == name:
                 rating = float(input("What is the updated rating of {name}"))
