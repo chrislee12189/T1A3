@@ -9,8 +9,8 @@ from rent import Rent
 #---------------------------------------TODO:-----------------------------------------#
 #   develop error testing for each feature
 #   feature 1 = movie list = error test for feature one = not implemented yet
-#   feature 2 = add movie to database = error test for feature two = not implemented yet
-#   feature 3 = borrow movie = error test for feature three = not implemented yet
+#   feature 2 = add movie to database = 2 TESTS WORKING = TESTS FOR EMPTY STRING FOR NAME OF MOVIE, TESTS FOR STR ENTRY FOR MOVIE RATING = implemented and functional
+#   feature 3 = borrow movie = 2 TESTS WORKING = TESTS FOR EMPTY STRING WHEN ENTERING MOVIE THEY WANT TO RENT, TESTS FOR CORRECT INPUT TYPE WHEN ASKING RENTAL PERIOD = implemented and functional
 
 #---------------------------------#
 
@@ -71,10 +71,21 @@ def remove_movie():
 
 
 def rent_movie():
+    max_length = 20
     movie_menu.print_movie_menu()
     name=input("Whats the name of the movie youre borrowing?: ")
-    length = float(input(f"How long (# in days) are you borrowing {name} for?: "))
-    print(f"{name}: is loaned to you for: {length} days! Enjoy")
+    if name == "":
+        print("Invalid option, empty entries are not allowed.")
+    try:
+        length = float(input(f"How long (# in days) are you borrowing {name} for?: "))
+        if length >= max_length:
+            print("Maximum rental period is 19 days.")
+        if length == "":
+            print("Invalid option, empty entries are not allowed.")
+        else:
+            print(f"{name}: is loaned to you for: {length} days! Enjoy")
+    except ValueError:
+        print("Value Error. Rental period input must be integer.")
     
 
 option = ""
