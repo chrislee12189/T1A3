@@ -7,15 +7,28 @@ from seed import movie_seed
 from rent import Rent
 
 #---------------------------------------TODO:-----------------------------------------#
-#   show list = works 
-#   add movie = works
-#   adjust rating = works
-#   delete movie = works
-#   rent movie = works
-#   exit = works
+#   develop error testing for each feature
+#   feature 1 = movie list = error test for feature one = not implemented yet
+#   feature 2 = add movie to database = error test for feature two = not implemented yet
+#   feature 3 = borrow movie = error test for feature three = not implemented yet
 
+#---------------------------------#
+
+# def check_is_digit(input_str):
+#     if input_str.strip().isdigit():
+#         print("User input is Number")
+#     else:
+#         print("User input is string")
+
+
+# num1 = input("Enter number and hit enter")
+# check_is_digit(num1)
+
+# num2 = input("Enter number and hit enter")
+# check_is_digit(num2)
 
 movie_menu = movie_seed()
+
 #-----------------------------------------MAIN MENU FOR TERMINAL APP----------------------------------------------------------#
 def print_options():
     print("1.Show movie list")
@@ -28,10 +41,23 @@ def print_options():
     return option
 #------------------------------------------END MAIN MENU-----------------------------------------------------------------------#
 #------------------------------------------DEFINE MENU OPTIONS-----------------------------------------------------------------#
+
 def add_movie():
-    name=input("Whats the name of the movie youre adding?: ")
-    rating = float(input(f"Whats the rating of {name}?: "))
-    movie_menu.add_movie(name,rating)
+    #FIXME: first try/except block ignored/doesnt work. 2nd works fine
+    try:
+        name=input("Whats the name of the movie youre adding?: ")
+        if name == "":
+            print("Empty name entries are invalid.")
+    except:
+        pass
+        
+    try:
+        rating = float(input(f"Whats the rating of {name}?: "))
+        movie_menu.add_movie(name,rating)
+    except: 
+        print("Invalid input type. Rating can only be a number")
+
+
 
 def edit_rating():
     movie_menu.print_movie_menu()
