@@ -1,16 +1,8 @@
 class Rent:
     def __init__(self):
         self.rent_movie = {}
-    
-    def add_to_cart(self,name,quantity):
-        if name in self.rent_movie:
-            self.add_to_cart += quantity
-        else:
-            self.add_to_cart[name] = quantity
-
-    def total_cost(self):
-        total = 0
-        for name, quantity in self.rent_movie.items():
-            price = 5
-            total += price * quantity 
-        return(f"Total Cost of your order is: ${total}")
+    #FIXME:
+    def add_to_cart(self,name,length):
+        self.name = name
+        self.length = length 
+        print(f"{self.name}: is loaned to you for: {self.length}")

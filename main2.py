@@ -11,7 +11,7 @@ from rent import Rent
 #   add movie = works
 #   adjust rating = works
 #   delete movie = works
-#   rent movie = takes movie name and copy nums but breaks after that
+#   rent movie = works
 #   exit = works
 
 
@@ -43,17 +43,13 @@ def remove_movie():
         name = input("What is the name of the movie you're removing: ")
         movie_menu.delete_movie(name)
 
-# FIXME:
+
 def rent_movie():
-    print("Lets rent a movie for you today!: ")
-    rent_movie = Rent()
-    continue_order = "y"
-    while continue_order == "y":
-        name = input("What movie do you want?: ")
-        quantity = input("How many copies?: ")
-        rent_movie.add_to_cart(name, quantity)
-        print(rent_movie.add_to_cart)
-        print(rent_movie.total_cost())
+    movie_menu.print_movie_menu()
+    name=input("Whats the name of the movie youre borrowing?: ")
+    length = float(input(f"How long (# in days) are you borrowing {name} for?: "))
+    print(f"{name}: is loaned to you for: {length} days! Enjoy")
+    
 
 option = ""
 
@@ -81,3 +77,16 @@ while option != "6":
     # system("clear")
 
 print("Goodbye")
+
+
+
+#  movie_menu.print_movie_menu()
+#     print("Lets rent a movie for you today!: ")
+#     rent_movie = Rent()
+#     # continue_order = "y"
+#     # while continue_order == "y":
+#     name = input("What movie do you want?: ")
+#     quantity = input("How many copies?: ")
+#     rent_movie.add_to_cart(name, quantity)
+#         # print(rent_movie.add_to_cart)
+#         # print(rent_movie.total_cost())
