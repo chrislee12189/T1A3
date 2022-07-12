@@ -6,12 +6,12 @@ from Movie_Menu import Movie_Menu
 from seed import movie_seed
 from rent import Rent
 
-#---------------------------------------TO DO LIST-----------------------------------------#
+#---------------------------------------TODO:-----------------------------------------#
 #   show list = works 
 #   add movie = works
-#   adjust rating = takes input but doesnt save it/update it
-#   delete movie = broken
-#   rent movie = works
+#   adjust rating = works
+#   delete movie = works
+#   rent movie = takes movie name and copy nums but breaks after that
 #   exit = works
 
 
@@ -38,12 +38,12 @@ def edit_rating():
     name = input("Whats the name of the movie who's rating youd like to edit?: ")
     movie_menu.edit_movie_rating(name)
 
+
 def remove_movie():
-    for item in movie_menu:
-        print(item.name)
         name = input("What is the name of the movie you're removing: ")
         movie_menu.delete_movie(name)
 
+# FIXME:
 def rent_movie():
     print("Lets rent a movie for you today!: ")
     rent_movie = Rent()
