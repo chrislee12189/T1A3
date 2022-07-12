@@ -1,12 +1,21 @@
 from os import system
+
+from pkg_resources import working_set
 from Movie_menu_items import Movie_Menu_Items
 from Movie_Menu import Movie_Menu
 from seed import movie_seed
 from rent import Rent
 
+#---------------------------------------TO DO LIST-----------------------------------------#
+#   show list = works 
+#   add movie = works
+#   adjust rating = takes input but doesnt save it/update it
+#   delete movie = broken
+#   rent movie = takes movie name and copy nums but breaks after that
+#   exit = works
 
 
-movie_menu = movie_seed
+movie_menu = movie_seed()
 #-----------------------------------------MAIN MENU FOR TERMINAL APP----------------------------------------------------------#
 def print_options():
     print("1.Show movie list")
@@ -22,12 +31,12 @@ def print_options():
 def add_movie():
     name=input("Whats the name of the movie youre adding?: ")
     price = float(input(f"Whats the rating of {name}?: "))
-    Movie_Menu.add_movie(name, price)
+    movie_menu.add_movie(name, price)
 
 def edit_rating():
-    Movie_Menu.print_movie_menu()
+    movie_menu.print_movie_menu()
     name = input("Whats the name of the movie who's rating youd like to edit?: ")
-    Movie_Menu.edit_rating(name)
+    movie_menu.edit_rating(name)
 
 def remove_movie():
     for item in movie_menu:
@@ -52,9 +61,10 @@ while option != "6":
     # system("clear")
     option = print_options()
     # system("clear")
+    #print works!
     if option == "1":
-        print(movie_seed())
-    #broken currently
+        movie_menu.print_movie_menu()
+    #add movie works
     elif option == "2":
         add_movie()
     elif option == "3":

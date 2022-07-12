@@ -4,4 +4,4 @@ class Movie_Menu_Items:
         self.price = price
 
     def show_item(self):
-        print(f"{self.name}: ${self.price}")
+        print(f"{self.name}: Rating: {self.price}")
