@@ -19,7 +19,8 @@ class Movie_Menu:
         for item in self.movie_menu_items:
             if item.name == name:
                 self.movie_menu_items.remove(item)
-            return print(f"{name} was removed from our database!")
+                return print(f"{name} was removed from our database!")
+        return print(f"{name} was not in the list!")
 
     def edit_movie_rating(self, name):
         for item in self.movie_menu_items:
