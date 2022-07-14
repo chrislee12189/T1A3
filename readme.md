@@ -4,6 +4,13 @@
 - **FEATURES**   
 - **TESTING**  
 - **TESTING RESULTS**  
+# LINK TO MY GITHUB REPOSITORY:
+https://github.com/chrislee12189/T1A3  
+# LINK TO CLONE MY GITHUB REPOSITORY:
+git@github.com:chrislee12189/T1A3.git 
+# LINK TO GOOGLE SHEETS DOC CONTAINING TESTS
+https://docs.google.com/spreadsheets/d/1efrQbJEYdCSuF6wbV7F3Qs6WEMpdF6MXvO5bObPIXcw/edit#gid=1342169021  
+
 
 # DESIGN PROCESS AND IDEAS/IMPLEMENTATION  
 This terminal app is supposed to mimmic a virtual/online movie database/rental buisness.  The app currently has features in it that allow the user to navigate from a home/main menu through the program depending on what they want to do. Currently, they can check our database and find out what films we have/what films are available to rent. Users can also add a movie to the database alongside a corresponding rating.Once successfully added, users are able to see the movie they added by reprinting the movie list!  
@@ -17,6 +24,10 @@ Overall, a few things were used for the design process, in an effort to keep thi
 - **Diagram/Flowcharting** - (used to visual how the app would function and communicate with itself)  
 - **Slide Decks** - (used to present functionality,planning, design processes)
 - **Hand written journal/drawings** - (used to quickly scribble ideas out and solve functionality issues)  
+### ACCESS TO TRELLO AND DIAGRAMS WILL BE PROVIDED VIA PRESENTATION, GITHUB AND SUBMITTED WITH ASSIGNMENT  
+
+## CODE STYLE CONVENTIONS:
+This terminal applicationw was written in accorance to standard python conventions.
 
 #  FEATURES  
 ## THE THREE FEATURES OF MY TERMINAL APP ARE:
@@ -157,9 +168,17 @@ The delete_movie was a strong candidate for a feature that would be presented fo
 The movie menu itself was brielfy considered for a feature due to its interaction with nearly every function in the program. It is a staple to the program but it did not allow for impressive/good testing methodology and so it was axed as a contended for a feature.
 
 # TESTING AND TEST RESULTS  
-EXPLAIN TESTS  
-REFERENCE GOOGLE SHEETS TEST DOCUMENTATION  
-TEST RESULTS   
-RETESTS/TEST SCOPE ADJUSTING DUE TO RESULTS  
+- Each feature had 2 primary tests applied to it to test functionality and error handling.
+- If the tests failed, a retest was conducted. 
+- 2 features passed tests easily. 
+- The 3rd feature (renting a movie) passed its first test but made me aware that the test scope should be broadened. 
+- The 3rd feature passed its second test but **failed** its third test.
+- The 3rd feature passed its retest.
 
+## TESTING METHODOLOGY AND DOCUMENTATION:
+- Testing was conducted via google spreadsheet and smartsheet
+- Tests were documented, dated, described and graded (pass/fail)
+- If a test failed, it remained on the documentation and a new row was used to demonstrate re-testing efforts.
+
+### TESTING WILL BE AVALABLE TO REVIEW IN MY PRESENTATION AND ON MY GITHUB.
 # LINKS TO GITHUB, EXTERNAL DOCUMENTATIONS SUCH AS TRELLO AND GOOGLE SHEETS
