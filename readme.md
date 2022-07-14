@@ -12,7 +12,8 @@ https://github.com/chrislee12189/T1A3
 git@github.com:chrislee12189/T1A3.git 
 # LINK TO GOOGLE SHEETS DOC CONTAINING TESTS
 https://docs.google.com/spreadsheets/d/1efrQbJEYdCSuF6wbV7F3Qs6WEMpdF6MXvO5bObPIXcw/edit#gid=1342169021  
-
+# LINK TO TRELLO BOARD  
+https://trello.com/b/ikXsEPIs/terminal-app-t1a3
 # INSTALLATION STEPS:
 To install and run this program:  
 - Create a new directory on your terminal  ("mkdir" followed by the name you want to call the directory)
@@ -24,6 +25,7 @@ To install and run this program:
 
 # DEPENDENCIES/REQUIREMENTS/SYSTEM HARDWARE
 - There is no minimum hardware requirements needed to run this app
+- Link to colorama module: https://www.youtube.com/watch?v=u51Zjlnui4Y&ab_channel=TechWithTim
 - In order for the colored text effects to work in terminal you will need install them. Installation is as easy as entering this command into your terminal: 
 ```
 pip install colorama
@@ -32,6 +34,7 @@ pip install colorama
 ```
 pip3 install colorama
 ```
+- access to terminal or bash shell required
 # DESIGN PROCESS AND IDEAS/IMPLEMENTATION  
 This terminal app is supposed to mimmic a virtual/online movie database/rental buisness.  The app currently has features in it that allow the user to navigate from a home/main menu through the program depending on what they want to do. Currently, they can check our database and find out what films we have/what films are available to rent. Users can also add a movie to the database alongside a corresponding rating.Once successfully added, users are able to see the movie they added by reprinting the movie list!  
 
@@ -199,6 +202,3 @@ The movie menu itself was brielfy considered for a feature due to its interactio
 - Testing was conducted via google spreadsheet and smartsheet
 - Tests were documented, dated, described and graded (pass/fail)
 - If a test failed, it remained on the documentation and a new row was used to demonstrate re-testing efforts.
-
-### TESTING WILL BE AVALABLE TO REVIEW IN MY PRESENTATION AND ON MY GITHUB.
-# LINKS TO GITHUB, EXTERNAL DOCUMENTATIONS SUCH AS TRELLO AND GOOGLE SHEETS
