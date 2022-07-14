@@ -1,5 +1,7 @@
 # **READ ME DOCUMENTATION FOR TERMINAL APP (T1A3)**  
-**DOCUMENTATION WILL INCLUDE:**  
+**DOCUMENTATION WILL INCLUDE:**
+- **INSTALLATION STEPS**
+- **DEPENDENCIES/MINIMUM SYSTEM REQUIREMENTS**  
 - **DESIGN/IMPLEMENTATION**  
 - **FEATURES**   
 - **TESTING**  
@@ -11,7 +13,25 @@ git@github.com:chrislee12189/T1A3.git
 # LINK TO GOOGLE SHEETS DOC CONTAINING TESTS
 https://docs.google.com/spreadsheets/d/1efrQbJEYdCSuF6wbV7F3Qs6WEMpdF6MXvO5bObPIXcw/edit#gid=1342169021  
 
+# INSTALLATION STEPS:
+To install and run this program:  
+- Create a new directory on your terminal  ("mkdir" followed by the name you want to call the directory)
+- Once this new directory is created, copy the link above (my github repository clone link)
+- Paste git@github.com:chrislee12189/T1A3.git into your terminal and hit enter
+- Wait for the repository to clone
+- The command python3 main2.py will execute the program. (**NOTE:** command may also "python main2.py)  
+- The program will begin from the main menu. You can navigate through menu options using the numeric number associated with the menu option. ie 1.Print options = press "1" and click enter 
 
+# DEPENDENCIES/REQUIREMENTS/SYSTEM HARDWARE
+- There is no minimum hardware requirements needed to run this app
+- In order for the colored text effects to work in terminal you will need install them. Installation is as easy as entering this command into your terminal: 
+```
+pip install colorama
+```
+### OR
+```
+pip3 install colorama
+```
 # DESIGN PROCESS AND IDEAS/IMPLEMENTATION  
 This terminal app is supposed to mimmic a virtual/online movie database/rental buisness.  The app currently has features in it that allow the user to navigate from a home/main menu through the program depending on what they want to do. Currently, they can check our database and find out what films we have/what films are available to rent. Users can also add a movie to the database alongside a corresponding rating.Once successfully added, users are able to see the movie they added by reprinting the movie list!  
 

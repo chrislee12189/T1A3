@@ -25,9 +25,12 @@ class Movie_Menu:
     def edit_movie_rating(self, name):
         for item in self.movie_menu_items:
             if item.name == name:
-                rating = float(input(f"What is the updated rating of {name}?: "))
-                item.rating = rating
-                return print(f"{name}'s rating was updated!")
+                try:
+                    rating = float(input(f"What is the updated rating of {name}?: "))
+                    item.rating = rating
+                    return print(f"{name}'s rating was updated!")
+                except ValueError:
+                    return print("Value error caught. Integer is the only acceptable input for rating.")
         return print(f"{name} is not in our database!")
 
         #print, add, delete, update
