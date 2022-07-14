@@ -1,3 +1,4 @@
+from multiprocessing.sharedctypes import Value
 from os import system
 
 # from pkg_resources import working_set
@@ -7,6 +8,7 @@ from seed import movie_seed
 from rent import Rent
 
 #---------------------------------------TODO:-----------------------------------------#
+#edit test for menu
 #-------------------------------------------------------------------------------------#
 
 # def check_is_digit(input_str):
@@ -39,9 +41,9 @@ def print_options():
 
 def add_movie():
     try:
-        name=input("Whats the name of the movie youre adding?: ")
+        name=str(input("Whats the name of the movie youre adding?: "))
         if name == "":
-            print("Empty name entries are invalid.")
+            print("Empty name entries are invalid. You will be required to rebsumit your entry.")
     except:
         pass
         
@@ -49,7 +51,7 @@ def add_movie():
         rating = float(input(f"Whats the rating of {name}?: "))
         movie_menu.add_movie(name,rating)
     except: 
-        print("Invalid input type. Rating can only be a number")
+        print("Invalid input type. Rating can only be a number. You will be required to resubmit your entry.")
 
 
 
@@ -77,21 +79,17 @@ def rent_movie():
         if length == "":
             print("Invalid option, empty entries are not allowed.")
         else:
-            print(f"{name}: is loaned to you for: {length} days! Enjoy")
+            if length <= 19:
+                print(f"{name}: is loaned to you for: {length} days! Enjoy")
     except ValueError:
         print("Value Error. Rental period input must be integer.")
     
 
 option = ""
-
 while option != "6":
-    # system("clear")
     option = print_options()
-    # system("clear")
-    #print works!
     if option == "1":
         movie_menu.print_movie_menu()
-    #add movie works
     elif option == "2":
         add_movie()
     elif option == "3":
@@ -102,22 +100,6 @@ while option != "6":
         rent_movie()
     elif option == "6":
         continue
-    else: print("Sorry, i didnt understand that input type!")
-
-    # input("Press Enter to continue!!: ")
-    # system("clear")
-
+    else : print("Sorry, i didnt understand that input type!")
 print("Goodbye")
 
-
-
-#  movie_menu.print_movie_menu()
-#     print("Lets rent a movie for you today!: ")
-#     rent_movie = Rent()
-#     # continue_order = "y"
-#     # while continue_order == "y":
-#     name = input("What movie do you want?: ")
-#     quantity = input("How many copies?: ")
-#     rent_movie.add_to_cart(name, quantity)
-#         # print(rent_movie.add_to_cart)
-#         # print(rent_movie.total_cost())
