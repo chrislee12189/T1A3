@@ -16,21 +16,18 @@ class Movie_Menu:
         self.movie_menu_items.append(new_item)
 
     def delete_movie(self, name):
-        #iterate over list to find item
         for item in self.movie_menu_items:
-        #check if names match
             if item.name == name:
-            #access list and remove item
                 self.movie_menu_items.remove(item)
-                return print(f"{name} was removed from our database!")
+            return print(f"{name} was removed from our database!")
 
     def edit_movie_rating(self, name):
         for item in self.movie_menu_items:
             if item.name == name:
-                rating = float(input("What is the updated rating of {name}"))
+                rating = float(input(f"What is the updated rating of {name}?: "))
                 item.rating = rating
                 return print(f"{name}'s rating was updated!")
-        return print(f"{name} is not in our database!!")
+        return print(f"{name} is not in our database!")
 
         #print, add, delete, update
         #add, delete edit , take order,
