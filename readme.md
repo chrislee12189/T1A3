@@ -18,11 +18,34 @@ Overall, a few things were used for the design process, in an effort to keep thi
 - **Slide Decks** - (used to present functionality,planning, design processes)
 - **Hand written journal/drawings** - (used to quickly scribble ideas out and solve functionality issues)  
 
-#  FEATURES
-NAME THE THREE FEATURES  
+#  FEATURES  
+## THE THREE FEATURES OF MY TERMINAL APP ARE:
+- ADD MOVIE TO DATABASE
+- EDIT RATING OF MOVIE IN/ADDED TO DATABASE
+- RENT MOVIE
+
+
+### **FEATURE 1:**  
+My first feature is the "Edit Rating" feature. In my program, there is a predefined list with 6 or so movies. All of these movies come with a preassigned rating. Users are able to edit the rating of this movie by selecting the "edit rating" option from the main menu. They will then be prompted to provide the name of the movie they are editing as well as the new rating they are assigning to it.   
+Users are also able to edit the rating of a movie they have added via the same methodology.  
+
+### **FEATURE 2:**  
+My second feature is the "Add a movie" feature. Users are able to select this option from the main menu. The program will prompt them to provide a name and a rating for the movie they're adding.  
+
+### **FEATURE 3:**  
+My third feature is the "Rent a movie". Users are able to choose a movie from the list and choose how long they wish to rent the movie for. There is a maximum rental allowance length of 19 days. Should users exceed that length when they are prompted, they will be denied rental.  
+
+### **HONOURABLE MENTIONS:**  
+Users also have the ability to delete movies from the list. They are able to delete movies that were already present when the program began and/or movies that they've added themselves.  
+Users can also see the menu at any time by following the prompt to display the menu.
+
+
+
+
 EXPLAIN WHY I CHOSE THEM  
 EXPLAIN HOW THEY WORK 
 EXPLAIN DRAFT FEATURES/WHY THEY WERE CUT
+EXPLAIN FEATURES THAT DIDNT MAKE THE CUT/SUB FEATURES
 
 # TESTING AND TEST RESULTS  
 EXPLAIN TESTS  
