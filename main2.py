@@ -45,7 +45,7 @@ def add_movie():
         if name == "":
             print("Empty name entries are invalid. You will be required to rebsumit your entry.")
     except ValueError:
-        print("ValueError detected.")
+        print("ValueError")
     try:
         rating = float(input(f"Whats the rating of {name}?: "))
         movie_menu.add_movie(name,rating)

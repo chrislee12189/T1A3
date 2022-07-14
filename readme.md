@@ -105,18 +105,56 @@ def add_movie():
 
 ### FEATURE 3:  
 ```
-
+def rent_movie():
+    max_length = 20
+    movie_menu.print_movie_menu()
+    name=input("Whats the name of the movie youre borrowing?: ")
+    if name == "":
+        print("Invalid option, empty entries are not allowed.")
+    try:
+        length = float(input(f"How long (# in days) are you borrowing {name} for?: "))
+        if length >= max_length:
+            print("Maximum rental period is 19 days.")
+        if length == "":
+            print("Invalid option, empty entries are not allowed.")
+        else:
+            if length <= 19:
+                print(f"{name}: is loaned to you for: {length} days! Enjoy")
+    except ValueError:
+        print("Value Error. Rental period input must be integer.")
 ```
 ```
-
+class Rent:
+    def __init__(self):
+        self.rent_movie = {}
+        
+    def add_to_cart(self,name,length):
+        self.name = name
+        self.length = length 
+        print(f"{self.name}: is loaned to you for: {self.length}")
 ```
+### rent_movie:
+- This function is responsible for accepting input from the user. If the input is empty, they get an invalid entry prompt.
+- Once theyve let the program know what movie they want, they enter how long they want to borrow it for. 
+- If they request to rent it for longer than 19 days, they will be denied. 
+- They will also recieve a value error if they do not enter an integer for the rental length.
+
+### class Rent:
+- This class is actually on the cutting board now, im 99% i dont and will not need this class.
+- It was used in earlier versions of the program but no longer seems to be used. 
+- Subject to the result of functionality test, if it can be removed, it will be.
+- It is included in this documentation to show the reader the thought processes i had when creating this section of the program.
 
 
+## WHY WERE THESE FEATURES CHOSEN?: 
+I chose these 3 features to put forward for assessment because i feel they show some fun code that features relative complexity. These features were also great canditates for testing and allowed for a broad scope of tests/outcomes.  
+These features allowed for try/except testing, ValueError testing and if/else testing.  
+All of these tests handle/catch errors in a different way and i feel like i learnt a lot by doing it this way.
 
-EXPLAIN WHY I CHOSE THEM  
-EXPLAIN HOW THEY WORK 
-EXPLAIN DRAFT FEATURES/WHY THEY WERE CUT
-EXPLAIN FEATURES THAT DIDNT MAKE THE CUT/SUB FEATURES
+### SUB FEATURES:
+The delete_movie was a strong candidate for a feature that would be presented for assessment. Ultimately i didnt include it, but i would like to give it an honourable mention. That function has some cool features, such as the ability to iterate over the movie menu list -including movies added by the user- and remove them if selected. It features 2 conditional return statements and was a great learning curve regarding indentation conventions/functionality.  
+
+The movie menu itself was brielfy considered for a feature due to its interaction with nearly every function in the program. It is a staple to the program but it did not allow for impressive/good testing methodology and so it was axed as a contended for a feature.
 
 # TESTING AND TEST RESULTS  
 EXPLAIN TESTS  
