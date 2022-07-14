@@ -44,14 +44,13 @@ def add_movie():
         name=str(input("Whats the name of the movie youre adding?: "))
         if name == "":
             print("Empty name entries are invalid. You will be required to rebsumit your entry.")
-    except:
-        pass
-        
+    except ValueError:
+        print("ValueError detected.")
     try:
         rating = float(input(f"Whats the rating of {name}?: "))
         movie_menu.add_movie(name,rating)
-    except: 
-        print("Invalid input type. Rating can only be a number. You will be required to resubmit your entry.")
+    except ValueError: 
+        return print("Invalid input type. Rating can only be a number. You will be required to resubmit your entry.")
 
 
 

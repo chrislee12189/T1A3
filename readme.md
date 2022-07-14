@@ -20,8 +20,8 @@ Overall, a few things were used for the design process, in an effort to keep thi
 
 #  FEATURES  
 ## THE THREE FEATURES OF MY TERMINAL APP ARE:
-- ADD MOVIE TO DATABASE
 - EDIT RATING OF MOVIE IN/ADDED TO DATABASE
+- ADD MOVIE TO DATABASE
 - RENT MOVIE
 
 
@@ -37,8 +37,79 @@ My third feature is the "Rent a movie". Users are able to choose a movie from th
 
 ### **HONOURABLE MENTIONS:**  
 Users also have the ability to delete movies from the list. They are able to delete movies that were already present when the program began and/or movies that they've added themselves.  
-Users can also see the menu at any time by following the prompt to display the menu.
+Users can also see the menu at any time by following the prompt to display the menu.  
 
+## HOW MY FEATURES WORK:  
+### FEATURE 1:  
+``` 
+    def edit_movie_rating(self, name):
+        for item in self.movie_menu_items:
+            if item.name == name:
+                rating = float(input(f"What is the updated rating of {name}?: "))
+                item.rating = rating
+                return print(f"{name}'s rating was updated!")
+        return print(f"{name} is not in our database!")
+```  
+
+```
+def edit_rating():
+    movie_menu.print_movie_menu()
+    name = input("Whats the name of the movie who's rating youd like to edit?: ")
+    movie_menu.edit_movie_rating(name)
+```
+
+### edit_movie_rating:
+- The edit_movie_rating feature utilises a "for" loop to iterate over the list of movies that is has. (Includes movies added by the user)  
+- The "for" loop then has a conditional "if" statement that checks user input against the list of movies.  
+- *If* the name the user provided matches a known movie name, the program proceeds to prompt them to provide the new rating.  
+- Type conversion converts user input into a float in case they decide to use a decimal number for the rating.  
+- Item_rating = rating assigns the new rating to a variable  
+- 2 return statements are present in this code block, the first, is nested and prompts the user of a successful rating update. The second is outside the loop and returns a failed search for the movie they were looking to edit.  
+
+### edit_rating:  
+- This function is much simpler. First it prints the movie list  
+- Then it prompts the user and asks for the movie they wish to edit.  
+- Using the dot notation, the program can access the attributes/methods of the Movie_menu class. This class and its functions were imported to main so that i could envoke them/or access each method of instances of different object classes.  
+
+
+### FEATURE 2: 
+```
+def add_movie():
+    try:
+        name=str(input("Whats the name of the movie youre adding?: "))
+        if name == "":
+            print("Empty name entries are invalid. You will be required to rebsumit your entry.")
+    except ValueError:
+        print("ValueError detected.")
+    try:
+        rating = float(input(f"Whats the rating of {name}?: "))
+        movie_menu.add_movie(name,rating)
+    except ValueError: 
+        return print("Invalid input type. Rating can only be a number. You will be required to resubmit your entry.")
+```
+```
+    def add_movie(self, name, rating):
+        new_item = Movie_Menu_Items(name, rating)
+        self.movie_menu_items.append(new_item)
+```
+### add_movie:  
+- This function takes user input and converts it into a string. The reason for this type conversion is because movie names can include numbers.  
+- In the first *try* test block, the program checks to see if the user entered something when prompted for an input.  
+- If the input is empty/they didnt enter anything, the program prompts the user by telling them it is an invalid entry. Catching an empty string works efficiently and so the valueerror is never raised.  
+- The program then asks the user for the rating of the movie they're adding. This number is converted to a float in case they enter a decimal number.  
+- If they enter anything but an integer for the rating, the program alerts them that this is an invalid entry and they will be required to resubmit.
+
+### add_movie(self,name,rating):
+- This function takes the input from the user and stores it in a variable called new_item.
+- The program then appends this variable to the movie menu list and so if the user prints the movie menu list after that, the new movie will be seen on the database.  
+
+### FEATURE 3:  
+```
+
+```
+```
+
+```
 
 
 
