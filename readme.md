@@ -14,6 +14,8 @@ git@github.com:chrislee12189/T1A3.git
 https://docs.google.com/spreadsheets/d/1efrQbJEYdCSuF6wbV7F3Qs6WEMpdF6MXvO5bObPIXcw/edit#gid=1342169021  
 # LINK TO TRELLO BOARD  
 https://trello.com/b/ikXsEPIs/terminal-app-t1a3
+# LINK TO GOOGLE SHEETS PRESENTATION
+https://docs.google.com/presentation/d/1PigqHKH3KcfWJ6ZvsX9q8nSfkDZAagziDBiGli0XWP4/edit#slide=id.g13cf80217ef_0_78
 # INSTALLATION STEPS:
 To install and run this program:  
 - Create a new directory on your terminal  ("mkdir" followed by the name you want to call the directory)
@@ -34,7 +36,7 @@ pip install colorama
 ```
 pip3 install colorama
 ```
-- access to terminal or bash shell required
+- access to terminal or bash shell
 # DESIGN PROCESS AND IDEAS/IMPLEMENTATION  
 This terminal app is supposed to mimmic a virtual/online movie database/rental buisness.  The app currently has features in it that allow the user to navigate from a home/main menu through the program depending on what they want to do. Currently, they can check our database and find out what films we have/what films are available to rent. Users can also add a movie to the database alongside a corresponding rating.Once successfully added, users are able to see the movie they added by reprinting the movie list!  
 
