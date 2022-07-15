@@ -10,6 +10,15 @@ The options are:
 - 4. Delete a movie from the database
 - 5. Rent a movie from the list
 
+# INSTALLATION STEPS:
+To install and run this program:  
+- Create a new directory on your terminal  ("mkdir" followed by the name you want to call the directory)
+- Once this new directory is created, copy the link above (my github repository clone link)
+- Paste git@github.com:chrislee12189/T1A3.git into your terminal and hit enter
+- Wait for the repository to clone
+- The command python3 main2.py will execute the program. (**NOTE:** command may also "python main2.py)  
+- The program will begin from the main menu. You can navigate through menu options using the numeric number associated with the menu option. ie 1.Print options = press "1" and click enter
+
 ## THE MENU IS PRINTED INCREDIBLY OFTEN AND USERS ARE ABLE TO INTERACT WITH IT AFTER ANY TASK COMPLETION, WHETHER THEY INPUT A VALID RESPONSE TO THEIR CURRENT ACTIVITY OR NOT.
 ### Option 1:  
 Option one prints the list of movies i pre defined for the program. If a user selects "2" from the main menu and correctly adds a movie, reprinting the list will show the original list and any movie they added. These entries are only valid for the current session, ending the program and restarting it will erase any additions/deletions the user makes.
