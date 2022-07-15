@@ -3,28 +3,10 @@ from os import system
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
-# from pkg_resources import working_set
 from Movie_menu_items import Movie_Menu_Items
 from Movie_Menu import Movie_Menu
 from seed import movie_seed
-from rent import Rent
 
-#---------------------------------------TODO:-----------------------------------------#
-#edit test for menu
-#-------------------------------------------------------------------------------------#
-
-# def check_is_digit(input_str):
-#     if input_str.strip().isdigit():
-#         print("User input is Number")
-#     else:
-#         print("User input is string")
-
-
-# num1 = input("Enter number and hit enter")
-# check_is_digit(num1)
-
-# num2 = input("Enter number and hit enter")
-# check_is_digit(num2)
 
 movie_menu = movie_seed()
 
@@ -86,7 +68,8 @@ def rent_movie():
     except ValueError:
         print(Back.YELLOW +"Value Error. Rental period input must be integer.")
     
-
+#------------------------------------------END MENU OPTIONS------------------------------------------------#
+#---------------------------------USER FACING MENU--------------------------------------------------------#
 option = ""
 while option != "6":
     option = print_options()
@@ -105,4 +88,4 @@ while option != "6":
         continue
     else : print(Back.YELLOW +"Sorry, i didnt understand that input type!")
 print(Back.MAGENTA + Fore.WHITE +"Goodbye")
-
+#----------------------------------END USER FACING MENU-----------------------------------------------------#

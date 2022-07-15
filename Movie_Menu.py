@@ -33,7 +33,5 @@ class Movie_Menu:
                     return print("Value error caught. Integer is the only acceptable input for rating.")
         return print(f"{name} is not in our database!")
 
-        #print, add, delete, update
-        #add, delete edit , take order,
 
 #-----------------------------------------------------------END-----------------------------------------------------------------#
