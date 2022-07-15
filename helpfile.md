@@ -24,7 +24,7 @@ Option three allows the user to edit the rating of a movie. This can be either a
 Option four allows the user to delete a movie from the database, like option 3, they can delete predefined movies or movies theyve added (after theyre added of course). To remove a movie, they must provide the name. This **is** case sensitive, ignoring case sensitivity will result in a failed attempt. 
 
 ### Option 5:  
-Option five allows the user to rent a movie, the criteria to rent is: movie must be in the database, rental length must be less than or equal to 19 days. To rent a movie, the user is prompted for 2 inputs, movie name and length of rental. If the movie name entry is empty, the program alerts the user and the attempt is invalid. If the rental lenght exceeds 19 days, it is also disallowed. A successful rental entry would be: correct in terms of case sensitivity and under the maximum number of days allowed for rent.  
+Option five allows the user to rent a movie, the criteria to rent is: movie must be in the database, rental length must be less than or equal to 19 days. To rent a movie, the user is prompted for 2 inputs, movie name and length of rental. If the movie name entry is empty, the program alerts the user and the attempt is invalid. If the rental length exceeds 19 days, it is also disallowed. A successful rental entry would be: correct in terms of case sensitivity and under the maximum number of days allowed for rent.  
 
 ### Option 6:
 Option six exits the program.

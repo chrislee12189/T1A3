@@ -1,4 +1,12 @@
 #!/bin/bash
-python3 main2.py
-
-# permission changed successfully for run_movie.sh file is now rwx (-rwxr-xr-x 1 chris chris   35 Jul 12 20:30 run_movie.sh)
+pip freeze | grep 'colorama'
+# python3 main2.py
+echo 'Do you want to print the help file? (y/n)'
+read helpfilereq
+if [[ $helpfilereq == "y" ]]; 
+    then
+            cat helpfile.md \n
+            python3 main2.py
+    else
+        python3 main2.py
+fi
