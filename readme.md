@@ -19,11 +19,13 @@ https://docs.google.com/presentation/d/1PigqHKH3KcfWJ6ZvsX9q8nSfkDZAagziDBiGli0X
 # INSTALLATION STEPS:
 To install and run this program:  
 - Create a new directory on your terminal  ("mkdir" followed by the name you want to call the directory)
-- Once this new directory is created, copy the link above (my github repository clone link)
+- Once this new directory is created,  navigate into it with : cd new_directory_name
+- Once in the directory, copy the link above (my github repository clone link)
 - Paste git@github.com:chrislee12189/T1A3.git into your terminal and hit enter
 - Wait for the repository to clone
-- The command python3 main2.py will execute the program. (**NOTE:** command may also "python main2.py)  
-- The program will begin from the main menu. You can navigate through menu options using the numeric number associated with the menu option. ie 1.Print options = press "1" and click enter 
+- The command python3 main2.py will execute the program. (**NOTE:** command may also "python main2.py)
+- If you are running this using bash, the command to execute the program will be: ./run_movie.sh  
+- The program will begin and prompt you about the help file. From the main menu, you can navigate through menu options using the numeric number associated with the menu option. ie 1.Print options = press "1" and click enter 
 
 # DEPENDENCIES/REQUIREMENTS/SYSTEM HARDWARE
 - There is no minimum hardware requirements needed to run this app
