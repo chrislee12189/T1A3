@@ -14,7 +14,7 @@ git@github.com:chrislee12189/T1A3.git
 https://docs.google.com/spreadsheets/d/1efrQbJEYdCSuF6wbV7F3Qs6WEMpdF6MXvO5bObPIXcw/edit#gid=1342169021  
 # LINK TO TRELLO BOARD  
 https://trello.com/b/ikXsEPIs/terminal-app-t1a3
-# LINK TO GOOGLE SHEETS PRESENTATION
+# LINK TO GOOGLE SLIDES PRESENTATION
 https://docs.google.com/presentation/d/1PigqHKH3KcfWJ6ZvsX9q8nSfkDZAagziDBiGli0XWP4/edit#slide=id.g13cf80217ef_0_78
 
 # INSTALLATION STEPS:
