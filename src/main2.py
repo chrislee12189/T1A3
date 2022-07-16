@@ -9,7 +9,6 @@ from seed import movie_seed
 
 
 movie_menu = movie_seed()
-
 #-----------------------------------------MAIN MENU FOR TERMINAL APP----------------------------------------------------------#
 def print_options():
     print(Back.CYAN +"1.Show movie list")

@@ -210,3 +210,9 @@ The movie menu itself was brielfy considered for a feature due to its interactio
 - Testing was conducted via google spreadsheet and smartsheet
 - Tests were documented, dated, described and graded (pass/fail)
 - If a test failed, it remained on the documentation and a new row was used to demonstrate re-testing efforts.
+
+## REFERENCES/ATTRIBUTION:
+- General app functionality was inspired from an in class code along. I took what we had written and changed/expanded upon it from the ground up.
+- Python packages: "Colorama". Colorama is a python package responsible for applying color styling effects for output in the terminal. It is free to use and download and download instructions are found in the readme.md doc
+- All movie names/ratings are fictional and any real world similarities are unintentional
+- 
