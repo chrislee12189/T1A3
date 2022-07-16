@@ -16,16 +16,17 @@ https://docs.google.com/spreadsheets/d/1efrQbJEYdCSuF6wbV7F3Qs6WEMpdF6MXvO5bObPI
 https://trello.com/b/ikXsEPIs/terminal-app-t1a3
 # LINK TO GOOGLE SHEETS PRESENTATION
 https://docs.google.com/presentation/d/1PigqHKH3KcfWJ6ZvsX9q8nSfkDZAagziDBiGli0XWP4/edit#slide=id.g13cf80217ef_0_78
+
 # INSTALLATION STEPS:
 To install and run this program:  
 - Create a new directory on your terminal  ("mkdir" followed by the name you want to call the directory)
-- Once this new directory is created,  navigate into it with : cd new_directory_name
-- Once in the directory, copy the link above (my github repository clone link)
-- Paste git@github.com:chrislee12189/T1A3.git into your terminal and hit enter
+- Once this new directory is created, type ```git clone git@github.com:chrislee12189/T1A3.git``` into your terminal and hit enter
 - Wait for the repository to clone
-- The command python3 main2.py will execute the program. (**NOTE:** command may also "python main2.py)
-- If you are running this using bash, the command to execute the program will be: ./run_movie.sh  
-- The program will begin and prompt you about the help file. From the main menu, you can navigate through menu options using the numeric number associated with the menu option. ie 1.Print options = press "1" and click enter 
+- After it has cloned, double check you are in the correct directory. You can do this by typing ```pwd``` this will show your directory path. You can also type ```ls``` to display the contents of the directory you're in. If all went well, youll now see a bunch of files for the program!
+
+- The command ```src/run_movie.sh``` will execute the program. (**NOTE:** this command must be entered into the terminal)  
+- The program will begin. You will be prompted about printing the optional help file. To enter your answer, type "y" for yes and "n" for no.
+- You can navigate through menu options using the numeric number associated with the menu option. ie 1.Print options = press "1" and click enter
 
 # DEPENDENCIES/REQUIREMENTS/SYSTEM HARDWARE
 - There is no minimum hardware requirements needed to run this app
@@ -38,7 +39,10 @@ pip install colorama
 ```
 pip3 install colorama
 ```
-- access to terminal or bash shell
+
+- access to terminal or bash shell required
+- access to git required
+- access to internet required
 # DESIGN PROCESS AND IDEAS/IMPLEMENTATION  
 This terminal app is supposed to mimmic a virtual/online movie database/rental buisness.  The app currently has features in it that allow the user to navigate from a home/main menu through the program depending on what they want to do. Currently, they can check our database and find out what films we have/what films are available to rent. Users can also add a movie to the database alongside a corresponding rating.Once successfully added, users are able to see the movie they added by reprinting the movie list!  
 
