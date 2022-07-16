@@ -3,9 +3,9 @@ from os import system
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
-from src.Movie_menu_items import Movie_Menu_Items
-from src.Movie_Menu import Movie_Menu
-from src.seed import movie_seed
+from Movie_menu_items import Movie_Menu_Items
+from Movie_Menu import Movie_Menu
+from seed import movie_seed
 
 
 movie_menu = movie_seed()

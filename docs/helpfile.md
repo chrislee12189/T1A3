@@ -13,11 +13,13 @@ The options are:
 # INSTALLATION STEPS:
 To install and run this program:  
 - Create a new directory on your terminal  ("mkdir" followed by the name you want to call the directory)
-- Once this new directory is created, copy the link above (my github repository clone link)
-- Paste git@github.com:chrislee12189/T1A3.git into your terminal and hit enter
+- Once this new directory is created, type ```git clone git@github.com:chrislee12189/T1A3.git``` into your terminal and hit enter
 - Wait for the repository to clone
-- The command python3 main2.py will execute the program. (**NOTE:** command may also "python main2.py)  
-- The program will begin from the main menu. You can navigate through menu options using the numeric number associated with the menu option. ie 1.Print options = press "1" and click enter
+- After it has cloned, double check you are in the correct directory. You can do this by typing ```pwd``` this will show your directory path. You can also type ```ls``` to display the contents of the directory you're in. If all went well, youll now see a bunch of files for the program!
+
+- The command ```src/run_movie.sh``` will execute the program. (**NOTE:** this command must be entered into the terminal)  
+- The program will begin. You will be prompted about printing the optional help file. To enter your answer, type "y" for yes and "n" for no.
+- You can navigate through menu options using the numeric number associated with the menu option. ie 1.Print options = press "1" and click enter
 
 ## THE MENU IS PRINTED INCREDIBLY OFTEN AND USERS ARE ABLE TO INTERACT WITH IT AFTER ANY TASK COMPLETION, WHETHER THEY INPUT A VALID RESPONSE TO THEIR CURRENT ACTIVITY OR NOT.
 ### Option 1:  
@@ -54,3 +56,5 @@ pip install colorama
 pip3 install colorama
 ```
 - access to terminal or bash shell required
+- access to git required
+- access to internet required
